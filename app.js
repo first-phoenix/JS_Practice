@@ -84,13 +84,26 @@
 
 
 
-//video 05
-//if else statement
-const age = 10;
-if (age > 18) {
-    console.log('you are good to go');
-} else if (age === 10) { // === matches data and datatype
-    console.log('Your age is 10');
-} else {
-    console.log('Good Bye');
+// //video 05
+// //if else statement
+// const age = 10;
+// if (age > 18) {
+//     console.log('you are good to go');
+// } else if (age === 10) { // === matches data and datatype
+//     console.log('Your age is 10');
+// } else {
+//     console.log('Good Bye');
+// } 
+
+
+
+
+//video 06
+//JS array
+
+const schedule = ['Hello', 'World', 'Swaraj', 'Khan'];
+schedule.push('I am new');
+for (let index = 0; index < schedule.length; index++) {
+    const a = schedule[index];
+    console.log(a);
 }

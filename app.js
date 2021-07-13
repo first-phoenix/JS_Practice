@@ -1,3 +1,4 @@
+// Video 01 and 02
 //Old Method to declare variables
 
 // var life = 100; // this is the life bar
@@ -32,7 +33,7 @@
 
 
 
-
+//Video 03
 //Functions
 // const name = "Swaraj";
 // const youtuber = "hello world";
@@ -68,14 +69,28 @@
 
 
 
-
+// Video 04
 //String concatenation
-console.log('Hello my name is ' + 'Swaraj'); //normal concatenation
-console.log('This is Swaraj\'s PC'); // using escape sequence
-const name = 'Swaraj';
-const age = 21;
+// console.log('Hello my name is ' + 'Swaraj'); //normal concatenation
+// console.log('This is Swaraj\'s PC'); // using escape sequence
+// const name = 'Swaraj';
+// const age = 21;
 
-console.log(`Hello it's me and my name is ${name} and my age is ${age}`); // using back tick and dollar sign 
-const combined = name + age; // make it a string
-console.log(combined);
-console.log(typeof combined); // return the type of a data type
+// console.log(`Hello it's me and my name is ${name} and my age is ${age}`); // using back tick and dollar sign 
+// const combined = name + age; // make it a string
+// console.log(combined);
+// console.log(typeof combined); // return the type of a data type
+
+
+
+
+//video 05
+//if else statement
+const age = 10;
+if (age > 18) {
+    console.log('you are good to go');
+} else if (age === 10) { // === matches data and datatype
+    console.log('Your age is 10');
+} else {
+    console.log('Good Bye');
+}

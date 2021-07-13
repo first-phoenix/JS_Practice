@@ -34,8 +34,8 @@
 
 
 //Functions
-const name = "Swaraj";
-const youtuber = "hello world";
+// const name = "Swaraj";
+// const youtuber = "hello world";
 
 // function logger() { // sample function
 //     console.log('Party Time'); //shift+alt+ down arrow to copy like this
@@ -47,21 +47,29 @@ const youtuber = "hello world";
 // logger(); // call the function
 
 
-function upperCase(text) {
-    // this is the first way to declare function, old way
-    const uppercased = text.toUpperCase();
-    console.log(uppercased);
-}
+// function upperCase(text) {
+//     // this is the first way to declare function, old way
+//     const uppercased = text.toUpperCase();
+//     console.log(uppercased);
+// }
 
-const upperCase1 = function() {
-    //write function here
-    //this is the second way to declare function
-}
+// const upperCase1 = function() {
+//     //write function here
+//     //this is the second way to declare function
+// }
 
-const upperCase2 = () => {
-    //write function here
-    //this is the third way ti declare function, new way
-}
+// const upperCase2 = () => {
+//     //write function here
+//     //this is the third way ti declare function, new way
+// }
 
-upperCase(name);
-upperCase(youtuber);
+// upperCase(name);
+// upperCase(youtuber);
+
+
+
+
+//String concatenation
+console.log('Hello my name is ' + 'Swaraj'); //normal concatenation
+console.log('This is Swaraj\'s PC'); // using escape sequence
+const name = 'Swaraj';

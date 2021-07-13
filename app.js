@@ -73,3 +73,9 @@
 console.log('Hello my name is ' + 'Swaraj'); //normal concatenation
 console.log('This is Swaraj\'s PC'); // using escape sequence
 const name = 'Swaraj';
+const age = 21;
+
+console.log(`Hello it's me and my name is ${name} and my age is ${age}`); // using back tick and dollar sign 
+const combined = name + age; // make it a string
+console.log(combined);
+console.log(typeof combined); // return the type of a data type

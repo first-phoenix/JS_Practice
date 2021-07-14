@@ -150,22 +150,59 @@
 // video 08
 // for loop, while loop
 
-const names = ["Swaraj", "Khan", "Hello", "World"];
+// const names = ["Swaraj", "Khan", "Hello", "World"];
 
-for (name of names) { // for loop
-    console.log(name);
-    if (name === 'Swaraj') {
-        break;
-    }
-}
+// for (name of names) { // for loop
+//     console.log(name);
+//     if (name === 'Swaraj') {
+//         break;
+//     }
+// }
 
-for (let i = 0; i < 2; i++) {
-    console.log(names[i]);
-}
+// for (let i = 0; i < 2; i++) {
+//     console.log(names[i]);
+// }
 
-let loading = 0;
-while (loading < 100) {
-    console.log("Website is loading");
-    console.log(loading);
-    loading++;
-}
+// let loading = 0;
+// while (loading < 100) {
+//     console.log("Website is loading");
+//     console.log(loading);
+//     loading++;
+// }
+
+
+
+
+// video 09
+// DOM manipulation
+
+const text = document.querySelector('.title');
+const changeColor = document.querySelector('.changeColor');
+
+// text.style.backgroundColor = "red"; // manipulate
+// text.classList.add("change"); //change class of css
+
+// changeColor.addEventListener('click', function() {
+//     text.classList.toggle('change');
+// });
+
+const userList = document.querySelector('.name-list li');
+const listInput = document.querySelector('.list-input');
+const addListbtn = document.querySelector('.addListbtn');
+// console.log(userList);
+
+// for (user of userList) {
+//     user.addEventListener('click', function() {
+//         console.log(this);
+//         this.style.color = "red";
+//     });
+// }
+
+addListbtn.addEventListener('click', function() {
+    const newLi = document.createElement('LI');
+    const liContent = document.createTextNode(listInput.value);
+
+    newLi.appendChild(liContent);
+
+    userList.appendChild(newLi);
+});

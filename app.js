@@ -103,7 +103,12 @@
 
 const schedule = ['Hello', 'World', 'Swaraj', 'Khan'];
 schedule.push('I am new');
+schedule.pop();
+schedule.shift();
+schedule.unshift('new at begining');
 for (let index = 0; index < schedule.length; index++) {
     const a = schedule[index];
     console.log(a);
 }
+console.log(schedule.indexOf('Swaraj'));
+console.log(schedule[2]);

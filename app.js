@@ -61,7 +61,7 @@
 
 // const upperCase2 = () => {
 //     //write function here
-//     //this is the third way ti declare function, new way
+//     //this is the third way to declare function, new way
 // }
 
 // upperCase(name);
@@ -101,14 +101,43 @@
 //video 06
 //JS array
 
-const schedule = ['Hello', 'World', 'Swaraj', 'Khan'];
-schedule.push('I am new');
-schedule.pop();
-schedule.shift();
-schedule.unshift('new at begining');
-for (let index = 0; index < schedule.length; index++) {
-    const a = schedule[index];
-    console.log(a);
+// const schedule = ['Hello', 'World', 'Swaraj', 'Khan'];
+// schedule.push('I am new');
+// schedule.pop();
+// schedule.shift();
+// schedule.unshift('new at begining');
+// for (let index = 0; index < schedule.length; index++) {
+//     const a = schedule[index];
+//     console.log(a);
+// }
+// console.log(schedule.indexOf('Swaraj'));
+// console.log(schedule[2]);
+
+
+// video 07
+// Object and this keyword
+
+const user = { // create object
+    name: 'Swaraj',
+    age: 21,
+    married: false,
+    purchases: ["phone", "car", "laptop"],
+    sayName: function() {
+        console.log(this);
+    },
+    sayOnlyName: function() {
+        console.log(this.name);
+    }
+};
+user.sayName();
+user.sayOnlyName();
+
+console.log(user.purchases);
+
+//this
+console.log(this); // this will return window object
+
+const sayMyAge = () => {
+    console.log(`This is my age - ${this}`);
 }
-console.log(schedule.indexOf('Swaraj'));
-console.log(schedule[2]);
+sayMyAge();

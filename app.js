@@ -114,30 +114,58 @@
 // console.log(schedule[2]);
 
 
+
+
 // video 07
 // Object and this keyword
 
-const user = { // create object
-    name: 'Swaraj',
-    age: 21,
-    married: false,
-    purchases: ["phone", "car", "laptop"],
-    sayName: function() {
-        console.log(this);
-    },
-    sayOnlyName: function() {
-        console.log(this.name);
+// const user = { // create object
+//     name: 'Swaraj',
+//     age: 21,
+//     married: false,
+//     purchases: ["phone", "car", "laptop"],
+//     sayName: function() {
+//         console.log(this);
+//     },
+//     sayOnlyName: function() {
+//         console.log(this.name);
+//     }
+// };
+// user.sayName();
+// user.sayOnlyName();
+
+// console.log(user.purchases);
+
+// //this
+// console.log(this); // this will return window object
+
+// const sayMyAge = () => {
+//     console.log(`This is my age - ${this}`);
+// }
+// sayMyAge();
+
+
+
+
+// video 08
+// for loop, while loop
+
+const names = ["Swaraj", "Khan", "Hello", "World"];
+
+for (name of names) { // for loop
+    console.log(name);
+    if (name === 'Swaraj') {
+        break;
     }
-};
-user.sayName();
-user.sayOnlyName();
-
-console.log(user.purchases);
-
-//this
-console.log(this); // this will return window object
-
-const sayMyAge = () => {
-    console.log(`This is my age - ${this}`);
 }
-sayMyAge();
+
+for (let i = 0; i < 2; i++) {
+    console.log(names[i]);
+}
+
+let loading = 0;
+while (loading < 100) {
+    console.log("Website is loading");
+    console.log(loading);
+    loading++;
+}

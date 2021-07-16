@@ -176,8 +176,8 @@
 // video 09
 // DOM manipulation
 
-const text = document.querySelector('.title');
-const changeColor = document.querySelector('.changeColor');
+// const text = document.querySelector('.title');
+// const changeColor = document.querySelector('.changeColor');
 
 // text.style.backgroundColor = "red"; // manipulate
 // text.classList.add("change"); //change class of css
@@ -186,23 +186,23 @@ const changeColor = document.querySelector('.changeColor');
 //     text.classList.toggle('change');
 // });
 
-const userList = document.querySelector('.name-list li');
-const listInput = document.querySelector('.list-input');
-const addListbtn = document.querySelector('.addListbtn');
-// console.log(userList);
+// const userList = document.querySelector('.name-list li');
+// const listInput = document.querySelector('.list-input');
+// const addListbtn = document.querySelector('.addListbtn');
+// // console.log(userList);
 
-// for (user of userList) {
-//     user.addEventListener('click', function() {
-//         console.log(this);
-//         this.style.color = "red";
-//     });
-// }
+// // for (user of userList) {
+// //     user.addEventListener('click', function() {
+// //         console.log(this);
+// //         this.style.color = "red";
+// //     });
+// // }
 
-addListbtn.addEventListener('click', function() {
-    const newLi = document.createElement('LI');
-    const liContent = document.createTextNode(listInput.value);
+// addListbtn.addEventListener('click', function() {
+//     const newLi = document.createElement('LI');
+//     const liContent = document.createTextNode(listInput.value);
 
-    newLi.appendChild(liContent);
+//     newLi.appendChild(liContent);
 
-    userList.appendChild(newLi);
-});
+//     userList.appendChild(newLi);
+// });
